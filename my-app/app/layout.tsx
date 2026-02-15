@@ -18,7 +18,7 @@ const lato = Lato({
 
 const grenze = Grenze_Gotisch({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '100', '700'],
   variable: '--font-grenze',
 })
 
