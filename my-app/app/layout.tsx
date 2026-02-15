@@ -34,7 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${lato.variable} ${grenze.variable} ${against.variable}`}>
+      <body className={`${lato.variable} ${grenze.variable} ${against.variable} bg-[#090909]`}>
         {children}
       </body>
     </html>
