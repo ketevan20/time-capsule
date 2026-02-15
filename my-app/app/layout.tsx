@@ -1,16 +1,26 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Lato, Grenze_Gotisch } from 'next/font/google'
+import localFont from 'next/font/local'
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const against = localFont({
+  src: '/Fonts/against regular.ttf',
+  variable: '--font-against',
+  weight: '400',
+  style: 'normal',
+})
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const lato = Lato({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-lato',
+})
+
+const grenze = Grenze_Gotisch({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+  variable: '--font-grenze',
+})
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,9 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${lato.variable} ${grenze.variable} ${against.variable}`}>
         {children}
       </body>
     </html>
