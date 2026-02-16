@@ -12,7 +12,7 @@ const against = localFont({
 
 const lato = Lato({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['400', '100', '700'],
   variable: '--font-lato',
 })
 
