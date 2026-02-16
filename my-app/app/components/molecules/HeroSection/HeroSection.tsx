@@ -7,11 +7,11 @@ const HeroSection = () => {
         <div className='w-full h-screen relative overflow-hidden'>
             <div className='max-w-475 left-[50%] -translate-x-[50%] absolute z-201 top-35 w-full flex justify-between items-center px-16 max-xl:px-4'>
                 <div className='w-122.5 flex flex-col gap-4 items-start max-xl:gap-2'>
-                    <p className='font-lato text-white text-[16px] max-xl:text-[12px]'>Virtual Achievement  Museum</p>
+                    <p className='font-sans text-white text-[16px] max-xl:text-[12px]'>Virtual Achievement  Museum</p>
                     <h1 className='font-against text-[64px] text-white max-xl:text-[32px]'>THE ART OF LIVING</h1>
                     <div className='w-[80%] h-px bg-[#FFFFFF]'></div>
-                    <p className='text-[#FFB800] font-lato text-[20px] font-semibold max-xl:text-[14px]'>"Our greatest glory is not in never falling, but<br /> in rising every time we fall."</p>
-                    <motion.button whileHover={{scale: 1.05}} transition={{duration:0.1}} className='font-lato py-4 px-12 bg-[#FFB800] text-black rounded-sm font-bold text-[22.45px] max-xl:px-3 max-xl:py-2 max-xl:text-[16px]'>Uncover History</motion.button>
+                    <p className='text-[#FFB800] font-sans text-[20px] font-semibold max-xl:text-[14px]'>"Our greatest glory is not in never falling, but<br /> in rising every time we fall."</p>
+                    <motion.button whileHover={{scale: 1.05}} transition={{duration:0.1}} className='font-sans py-4 px-12 bg-[#FFB800] text-black rounded-sm font-bold text-[22.45px] max-xl:px-3 max-xl:py-2 max-xl:text-[16px]'>Uncover History</motion.button>
                 </div>
                 <div className='text-right text-[#FFFFFF] opacity-60'>
                     <p className='hover:text-[#FFB800] underline cursor-pointer'>Science and Discovery</p>
