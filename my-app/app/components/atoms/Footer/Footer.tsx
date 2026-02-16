@@ -3,14 +3,14 @@ import Logo from '../Logo/Logo'
 import NavBar from '../NavBar/NavBar'
 import SocialIcons from '../SocialIcons/SocialIcons'
 
-const Footer = () => {
+const Footer = ({ref, refs, scrollToSection}: any) => {
     return (
-        <div className='relative bg-[rgba(125,90,0,1)] px-16 pt-8 pb-4 max-xl:px-12 font-lato'>
+        <div ref={ref} className='relative z-100 bg-[rgba(125,90,0,1)] px-16 pt-8 pb-4 max-xl:px-12 font-lato max-md:px-6 max-sm:px-4'>
             <img src="/earth.svg" alt="earth" className='absolute bottom-0 left-[50%] -translate-x-[50%] mix-blend-color-dodge' />
             <div className='relative z-20'>
-                <div className='flex justify-between items-center'>
-                    <Logo />
-                    <NavBar />
+                <div className='flex justify-between items-center max-sm:flex-col max-sm:gap-4'>
+                    <button onClick={() => scrollToSection(refs.homeRef)} className='cursor-pointer'><Logo /></button>
+                    <NavBar refs={refs} scrollToSection={scrollToSection} />
                     <SocialIcons />
                 </div>
                 <div className='w-full h-px bg-white my-4'></div>
