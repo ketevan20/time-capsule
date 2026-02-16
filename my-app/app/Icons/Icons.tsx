@@ -33,7 +33,7 @@ export const facebookIcon = (
 )
 
 export const backgroundIcon = (
-    <svg className='absolute z-99 left-0 h-full max-h-[90%] object-cover top-[50%] -translate-y-[40%] -translate-x-[50%]' width="1713" height="1716" viewBox="0 0 1713 1716" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='absolute z-99 left-0 h-full max-h-[90%] object-cover top-[50%] -translate-y-[40%] -translate-x-[50%] max-lg:max-w-full' width="1713" height="1716" viewBox="0 0 1713 1716" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1248.92 1193.17L1237.97 1205.07L1193.57 1164.25L1204.55 1152.34L1248.92 1193.17Z" fill="white" fillOpacity="0.1" />
         <path d="M503.109 506.999L492.155 518.901L447.788 478.073L458.741 466.171L503.109 506.999Z" fill="white" fillOpacity="0.1" />
         <path d="M738.908 1361.21L723.106 1357.68L736.3 1298.85L752.101 1302.38L738.908 1361.21Z" fill="white" fillOpacity="0.1" />

@@ -10,19 +10,18 @@ const FieldItem = ({item}: {item: string}) => {
     )
 }
 
-const FieldsSection = () => {
+const FieldsSection = ({ref}: any) => {
     return (
-        <div className='w-full'>
-            <h1 className='text-[64px] max-xl:text-[32px] font-black text-white mb-5'>Choose a field</h1>
-            <div className='grid grid-cols-3 gap-5 max-xl:gap-3'>
-                <FieldItem item='Science and Discovery'/>
-                <FieldItem item='Arts and Culture'/>
-                <FieldItem item='Medicine and Health'/>
-                <FieldItem item='Technology and Invention'/>
-                <FieldItem item='Social Progress and Governance'/>
-                <FieldItem item='Exploration and Discovery'/>
-                <FieldItem item='Innovation and Entrepreneurship'/>
-
+        <div ref={ref} className='w-full scroll-mt-24'>
+            <motion.h1 initial={{opacity: 0, x: -100}} whileInView={{opacity: 1, x:0}} transition={{duration: 1, ease: 'anticipate'}} viewport={{once: true}} className='text-[64px] max-xl:text-[32px] font-black text-white mb-5'>Choose a field</motion.h1>
+            <div className='grid grid-cols-3 gap-5 max-xl:gap-3 max-lg:grid-cols-2 max-sm:grid-cols-1'>
+                <motion.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y:0}} transition={{duration: 1, ease: 'anticipate'}} viewport={{once: true}}><FieldItem item='Science and Discovery'/></motion.div>
+                <motion.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y:0}} transition={{duration: 1, ease: 'anticipate'}} viewport={{once: true}}><FieldItem item='Arts and Culture'/></motion.div>
+                <motion.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y:0}} transition={{duration: 1, ease: 'anticipate'}} viewport={{once: true}}><FieldItem item='Medicine and Health'/></motion.div>
+                <motion.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y:0}} transition={{duration: 1, ease: 'anticipate', delay: 0.4}} viewport={{once: true}}><FieldItem item='Technology and Invention'/></motion.div>
+                <motion.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y:0}} transition={{duration: 1, ease: 'anticipate', delay: 0.4}} viewport={{once: true}}><FieldItem item='Social Progress and Governance'/></motion.div>
+                <motion.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y:0}} transition={{duration: 1, ease: 'anticipate', delay: 0.4}} viewport={{once: true}}><FieldItem item='Exploration and Discovery'/></motion.div>
+                <motion.div initial={{opacity: 0, y: -100}} whileInView={{opacity: 1, y:0}} transition={{duration: 1, ease: 'anticipate', delay: 0.8}} viewport={{once: true}}><FieldItem item='Innovation and Entrepreneurship'/></motion.div>
             </div>
         </div>
     )
