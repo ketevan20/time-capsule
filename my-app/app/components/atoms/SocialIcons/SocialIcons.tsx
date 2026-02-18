@@ -12,7 +12,7 @@ export const iconFunc = (icon: any) => {
 }
 const SocialIcons = () => {
   return (
-    <div className='flex gap-5 max-xl:gap-3 max-lg:gap-2 max-sm:mt-4'>
+    <div className='flex gap-5 max-xl:gap-3 max-lg:gap-2'>
         <motion.div initial={{opacity: 0, y: '50%'}} whileInView={{opacity:1, y: 0}} transition={{duration:1}} viewport={{once: true}}>{iconFunc(twitterIcon)}</motion.div>
         <motion.div initial={{opacity: 0, y: '50%'}} whileInView={{opacity:1, y: 0}} transition={{duration:1, delay:0.2}} viewport={{once: true}}>{iconFunc(facebookIcon)}</motion.div>
         <motion.div initial={{opacity: 0, y: '50%'}} whileInView={{opacity:1, y: 0}} transition={{duration:1, delay:0.4}} viewport={{once: true}}>{iconFunc(instagramIcon)}</motion.div>
