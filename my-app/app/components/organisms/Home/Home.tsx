@@ -24,7 +24,7 @@ const Home = () => {
     <div>
       <Header scrollToSection={scrollToSection} refs={{ aboutRef, exploreRef, contactRef, fieldsRef, highlightsRef, homeRef}} />
       <HeroSection ref={homeRef}/>
-      <img src="/clouds.svg" alt="clouds" className='w-full absolute left-0 right-0 bottom-0 translate-y-[40%]' />
+      <img src="/clouds.svg" alt="clouds" className='w-full absolute left-0 right-0 bottom-0 translate-y-[40%] max-sm:translate-y-[60%]' />
       <img src="/shadow.svg" alt="yellow-shadow" className='absolute top-screen -translate-y-[50%]' />
       <ContentSection refs={{ aboutRef, exploreRef, contactRef, fieldsRef, highlightsRef }} />
       <Footer scrollToSection={scrollToSection} refs={{ aboutRef, exploreRef, contactRef, fieldsRef, highlightsRef, homeRef }} ref={contactRef}/>

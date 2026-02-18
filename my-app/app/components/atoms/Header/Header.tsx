@@ -39,7 +39,7 @@ const Header = ({ scrollToSection, refs }: any) => {
   }, []);
 
   return (
-    <motion.div initial={{ y: '-100%' }} animate={{ y: isVisible ? 0 : "-100%" }} transition={{ duration: 0.5, ease: "easeInOut" }} className='fixed z-300 w-full bg-[linear-gradient(180deg,#000000_0%,rgba(0,0,0,0.92)_35%,rgba(0,0,0,0)_100%)] flex justify-between items-center px-16 py-5 max-2xl:px-12 font-lato font-normal max-md:px-6 max-sm:px-4 max-sm:py-0'>
+    <motion.div initial={{ y: '-100%' }} animate={{ y: isVisible ? 0 : "-100%" }} transition={{ duration: 0.5, ease: "easeInOut" }} className='fixed z-300 w-full bg-[linear-gradient(180deg,#000000_0%,rgba(0,0,0,0.92)_35%,rgba(0,0,0,0)_100%)] flex justify-between items-center px-16 py-5 max-2xl:px-6 max-2xl:py-1 font-sans font-normal max-md:px-6 max-sm:px-4 max-sm:py-0'>
       <button onClick={() => scrollToSection(refs.homeRef)} className='cursor-pointer'><Logo /></button>
       <div className='hidden md:block'><NavBar scrollToSection={scrollToSection} refs={refs} /></div>
       <div className='absolute top-4 right-4 z-400 block md:hidden'>

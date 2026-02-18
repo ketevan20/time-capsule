@@ -6,7 +6,7 @@ import SocialIcons from '../SocialIcons/SocialIcons'
 const Footer = ({ref, refs, scrollToSection}: any) => {
     return (
         <div ref={ref} className='relative z-100 bg-[rgba(125,90,0,1)] px-16 pt-8 pb-4 max-2xl:px-12 font-lato max-md:px-6 max-sm:px-4'>
-            <img src="/earth.svg" alt="earth" className='absolute bottom-0 left-[50%] -translate-x-[50%] mix-blend-color-dodge max-md:h-[60%]' />
+            <img src="/earth.svg" alt="earth" className='absolute bottom-0 left-[50%] -translate-x-[50%] mix-blend-color-dodge max-md:h-[70%]' />
             <div className='relative z-20'>
                 <div className='flex justify-between items-center max-sm:flex-col max-sm:gap-2'>
                     <button onClick={() => scrollToSection(refs.homeRef)} className='cursor-pointer'><Logo /></button>
