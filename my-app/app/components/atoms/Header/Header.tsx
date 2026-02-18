@@ -3,6 +3,7 @@ import Logo from '../Logo/Logo'
 import NavBar from '../NavBar/NavBar'
 import { AnimatePresence, motion } from 'motion/react';
 import { Menu, X } from 'lucide-react';
+import CategoryLink from '../CategoryLink/CategoryLink';
 
 const Header = ({ scrollToSection, refs }: any) => {
   const [isVisible, setIsVisible] = useState(true);
@@ -53,19 +54,18 @@ const Header = ({ scrollToSection, refs }: any) => {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ duration: 0.5, ease: "easeInOut", type: "tween" }}
-              className='absolute min-h-screen w-[50%] flex items-center justify-center right-0 top-0 bottom-0 
+              className='absolute min-h-screen w-[50%] flex flex-col items-center justify-around right-0 top-0 bottom-0 
                  bg-white/3 backdrop-blur-2xl backdrop-saturate-180 
-                 /* The primary #FFB800 border */
-                 border-l border-y border-[#FFB800]/40 
+                 border-l border-[#FFB800]/40 
                  shadow-[-15px_0_30px_-10px_rgba(255,184,0,0.15)]'
             >
-              {/* Refractive "Light Catch" Edge */}
               <div className="absolute inset-y-0 left-0 w-0.5 bg-linear-to-b from-transparent via-[#FFB800]/60 to-transparent" />
 
-              {/* Internal "Scattered" Glow (Mixing Blue & Gold) */}
               <div className="absolute inset-0 bg-radial-gradient from-[#FFB800]/5 via-blue-500/2 to-transparent pointer-events-none" />
 
               <NavBar scrollToSection={scrollToSection} refs={refs} />
+              <div className='w-[80%] h-px bg-[#FFFFFF]'></div>
+              <CategoryLink />
             </motion.div>
           )}
         </AnimatePresence>
